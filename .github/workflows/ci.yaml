@@ -49,7 +49,7 @@ jobs:
           uses: SonarSource/sonarcloud-github-action@v2
           with:
             projectBaseDir: .
-            organization: insu-qg
-            projectKey: Insu-qg_tp6-mock-react
           env:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+            SONAR_PROJECT_KEY: <Insu-qg_tp6-mock-react>
+            SONAR_ORGANIZATION: <insu-qg>
