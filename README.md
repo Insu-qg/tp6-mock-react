@@ -83,18 +83,12 @@ Pour pouvoir commit sans avoir d'erreur il faut executer `npm run dev` en arriè
 
 ## Liste des scripts
 
-| Script         | Commande                | Utilité                                                                 |
-|----------------|------------------------|-------------------------------------------------------------------------|
-| `dev`          | `vite`                 | Démarre le serveur de développement Vite avec hot reload.               |
-| `build`        | `vite build`           | Génère la version de production de l’application.                       |
-| `preview`      | `vite preview`         | Lance un serveur local pour prévisualiser la build de production.        |
-| `lint`         | `eslint .`             | Analyse le code source avec ESLint pour détecter les erreurs/linting.    |
-| `format`       | `prettier --write .`   | Formate automatiquement tout le code avec Prettier.                      |
-| `prepare`      | `husky`                | Installe les hooks Git Husky (exécuté automatiquement après install).    |
-
-**Remarques :**
-- Les tests Playwright peuvent être lancés avec :  
-  ```bash
-  npx playwright test
-  ```
-
+| Script      | Commande                  | Utilité                                                                 |
+|-------------|--------------------------|-------------------------------------------------------------------------|
+| `dev`       | `vite`                   | Démarre le serveur de développement Vite avec hot reload.               |
+| `build`     | `vite build`             | Génère la version de production de l’application.                       |
+| `preview`   | `vite preview`           | Lance un serveur local pour prévisualiser la build de production.        |
+| `lint`      | `eslint .`               | Analyse le code source avec ESLint pour détecter les erreurs/linting.    |
+| `format`    | `prettier --write .`     | Formate automatiquement tout le code avec Prettier.                      |
+| `prepare`   | `husky`                  | Installe les hooks Git Husky (exécuté automatiquement après install).    |
+| `test`      | `npx playwright test`    | Exécute les tests end-to-end avec Playwright.                           |
