@@ -4,6 +4,7 @@ function App() {
   const [products, setProducts] = useState([]);
   const [seed, setSeed] = useState(42);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   // Lis les paramètres de l'URL
   const searchParams = new URLSearchParams(window.location.search);
@@ -11,11 +12,15 @@ function App() {
 
   const fetchProducts = (currentSeed) => {
     setLoading(true);
-    // Ajoute count à la requête si présent dans l'URL
+    setError(null);
     const countParam = urlCount ? `&count=${urlCount}` : '';
     fetch(`/api/products?seed=${currentSeed}${countParam}`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error('Erreur serveur');
+        return res.json();
+      })
       .then(setProducts)
+      .catch(() => setError('Une erreur est survenue lors du chargement des produits.'))
       .finally(() => setLoading(false));
   };
 
@@ -34,6 +39,8 @@ function App() {
       <button onClick={handleReload}>Recharger</button>
       {loading ? (
         <p>Chargement...</p>
+      ) : error ? (
+        <p>{error}</p>
       ) : products.length === 0 ? (
         <p>Aucun produit disponible.</p>
       ) : (
