@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1750856027438" clover="3.2.0">
+  <project timestamp="1750856027438" name="All files">
+    <metrics statements="28" coveredstatements="18" conditionals="13" coveredconditionals="5" methods="10" coveredmethods="7" elements="51" coveredelements="30" complexity="0" loc="28" ncloc="28" packages="3" files="4" classes="4"/>
+    <package name="src">
+      <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="5" methods="7" coveredmethods="7"/>
+      <file name="App.jsx" path="D:\Projets\TP-Master\tp6-mock-react\src\App.jsx">
+        <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="5" methods="7" coveredmethods="7"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="42" count="40" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.mocks">
+      <metrics statements="8" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="browser.js" path="D:\Projets\TP-Master\tp6-mock-react\src\mocks\browser.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="handlers.js" path="D:\Projets\TP-Master\tp6-mock-react\src\mocks\handlers.js">
+        <metrics statements="7" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.utils">
+      <metrics statements="2" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="generateProducts.js" path="D:\Projets\TP-Master\tp6-mock-react\src\utils\generateProducts.js">
+        <metrics statements="2" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
