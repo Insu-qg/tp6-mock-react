@@ -26,4 +26,4 @@ jobs:
         run: npm run lint
 
       - name: Run Playwright tests with Vite
-        run: npx playwright install --with-deps && npm run dev && npx playwright test
+        run: npx playwright install --with-deps && npx start-server-and-test 'npm run dev' http://localhost:5173 'npx playwright test'
