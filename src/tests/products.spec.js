@@ -24,4 +24,15 @@ test.describe('Catalogue produits', () => {
             ).toBeVisible();
         }
     });
+
+    test('affiche un message si aucun produit n\'est disponible', async ({ page }) => {
+        // On force la génération de 0 produit en utilisant count=0
+        await page.goto(BASE_URL + '/?seed=0&count=0');
+
+        const items = await page.locator('ul > li');
+        await expect(items).toHaveCount(0);
+
+        await expect(page.getByText(/aucun produit/i)).toBeVisible();
+    });
+
 });
