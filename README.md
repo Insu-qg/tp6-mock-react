@@ -1,3 +1,6 @@
+![CI](https://github.com/Insu-qg/tp6-mock-react/actions/workflows/ci.yaml/badge.svg)
+ 
+
 # TP6 Catalogue Produits React – Projet avec Mock API et Tests
 
 Ce projet est une application React utilisant Vite, qui affiche un catalogue de produits générés dynamiquement via une API mockée avec MSW (Mock Service Worker). Des tests end-to-end sont réalisés avec Playwright.
