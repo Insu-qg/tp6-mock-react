@@ -43,8 +43,8 @@ test.describe('Catalogue produits', () => {
     // Aller sur la page d'accueil
     await page.goto(BASE_URL + '/');
 
-    // // Attendre la disparition du loader (le plus fiable)
-    // await expect(page.getByText(/chargement/i)).not.toBeVisible();
+    // Attendre la disparition du loader (le plus fiable)
+    await expect(page.getByText(/chargement/i)).not.toBeVisible();
 
     // Vérifie que les produits sont affichés
     const items = await page.locator('ul > li');
