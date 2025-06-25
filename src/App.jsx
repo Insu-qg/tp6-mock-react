@@ -3,14 +3,20 @@ import { useEffect, useState } from 'react';
 function App() {
   const [products, setProducts] = useState([]);
   const [seed, setSeed] = useState(42);
-  const [loading, setLoading] = useState(false); // Ajout de l'état loading
+  const [loading, setLoading] = useState(false);
+
+  // Lis les paramètres de l'URL
+  const searchParams = new URLSearchParams(window.location.search);
+  const urlCount = searchParams.get('count');
 
   const fetchProducts = (currentSeed) => {
-    setLoading(true); // Début du chargement
-    fetch(`/api/products?seed=${currentSeed}`)
+    setLoading(true);
+    // Ajoute count à la requête si présent dans l'URL
+    const countParam = urlCount ? `&count=${urlCount}` : '';
+    fetch(`/api/products?seed=${currentSeed}${countParam}`)
       .then((res) => res.json())
       .then(setProducts)
-      .finally(() => setLoading(false)); // Fin du chargement
+      .finally(() => setLoading(false));
   };
 
   useEffect(() => {
@@ -19,7 +25,6 @@ function App() {
 
   const handleReload = () => {
     const newSeed = Math.floor(Math.random() * 10000);
-    console.log('React seed:', newSeed); // ← ce log doit changer à chaque clic
     setSeed(newSeed);
   };
 
