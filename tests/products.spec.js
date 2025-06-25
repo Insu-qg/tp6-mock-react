@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { generateProducts } from '../utils/generateProducts.js';
+import { generateProducts } from '../src/utils/generateProducts.js';
 
 const BASE_URL = 'http://localhost:5173'; // Adaptez si besoin
 
