@@ -39,17 +39,19 @@ src/
 
 ## Installation et utilisation
 
-1. **Installer les dépendances**  
+1. **Installer les dépendances**
+
    ```bash
    npm install
    ```
 
-2. **Démarrer le serveur de développement**  
+2. **Démarrer le serveur de développement**
+
    ```bash
    npm run dev
    ```
 
-3. **Lancer les tests Playwright**  
+3. **Lancer les tests Playwright**
    ```bash
    npx playwright test
    ```

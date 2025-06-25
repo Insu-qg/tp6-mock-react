@@ -8,4 +8,3 @@ export function generateProducts(seed, count = 10) {
     price: faker.commerce.price(),
   }));
 }
-

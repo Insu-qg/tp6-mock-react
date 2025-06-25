@@ -8,7 +8,7 @@ function App() {
   const fetchProducts = (currentSeed) => {
     setLoading(true); // Début du chargement
     fetch(`/api/products?seed=${currentSeed}`)
-      .then(res => res.json())
+      .then((res) => res.json())
       .then(setProducts)
       .finally(() => setLoading(false)); // Fin du chargement
   };
@@ -33,7 +33,7 @@ function App() {
         <p>Aucun produit disponible.</p>
       ) : (
         <ul>
-          {products.map(p => (
+          {products.map((p) => (
             <li key={p.id}>
               {p.name} — {p.price}€
             </li>
@@ -45,4 +45,3 @@ function App() {
 }
 
 export default App;
-
