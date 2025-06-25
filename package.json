@@ -49,11 +49,5 @@
     "workerDirectory": [
       "public"
     ]
-  },
-  "jest": {
-    "coverageReporters": [
-      "lcov",
-      "text"
-    ]
   }
 }

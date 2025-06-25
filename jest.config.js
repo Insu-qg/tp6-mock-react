@@ -9,6 +9,7 @@ export default {
     "src/**/*.{js,jsx}",
     "!src/main.jsx"
   ],
+  coverageReporters: ["lcov", "text"],
   coverageDirectory: "coverage",
   testMatch: [
     "**/__tests__/**/*.[jt]s?(x)",
