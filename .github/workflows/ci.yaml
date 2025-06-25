@@ -51,5 +51,3 @@ jobs:
             projectBaseDir: .
           env:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-            SONAR_PROJECT_KEY: <Insu-qg_tp6-mock-react>
-            SONAR_ORGANIZATION: <insu-qg>
